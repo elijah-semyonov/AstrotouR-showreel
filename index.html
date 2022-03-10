@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>            
+            iframe {
+                width: 300px;
+                height: 500px;
+            }            
+        </style>
+    </head>
+<body>
+<header><h1>AstrotouR</h1></header>
+<nav>    
+    <a href="https://drive.google.com/drive/folders/1yUVMkjAkNRKUpqJbkD_Wsy10EDHPszcH?usp=sharing"><h2>Screenshots</h2></a>
+</nav>
+<main>
+    <section id="videos">
+        <h2>Videos</h2>            
+    </section>
+</main>
+
+</body>
+<script>
+    let youtubeVideoIds = [
+        "hfeFeDqa2cA",
+        "d8GuodU0KLg",        
+        "-0_R1TlTASg",
+        "xkvT6Bt53pY",
+        "yYehqOhVBew",
+        "R0d4LMIT__8",
+        "VwVc2MYULHk"        
+    ]
+
+    let videos = document.getElementById("videos")
+
+    for (videoId of youtubeVideoIds) {
+        let element = document.createElement("iframe")
+        element.setAttribute("src", "http://www.youtube.com/embed/" + videoId)
+        videos.appendChild(element)
+    }    
+
+    
+</script>
+
+</html>
